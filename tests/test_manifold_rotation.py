@@ -11,7 +11,6 @@ from pymanopt.tools.multi import multisym, multiprod, multitransp, multieye
 
 import autograd.numpy as npa
 
-
 class TestSingleRotationManifold(unittest.TestCase):
     def setUp(self):
         self.n = n = 2

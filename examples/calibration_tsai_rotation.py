@@ -31,10 +31,10 @@ if __name__ == "__main__":
 	X = manifold.rand()
 	iX = manifold.inverse(X)
 	A = manifoldk.rand()
-	B = np.zeros(k,3,3) # TODO same shape of A
+	B = np.zeros(np.shape(A)) # TODO same shape of A
     for i in xrange(k):
-    	Ai = A[:,:,i]
-    	B[:,:,i] = np.dot(iX,Ai,X)
+    	Ai = A[i]
+    	B[i] = np.dot(iX,Ai,X)
 
     def cost(Xp):
         # AX = XB measured with the proper distance
