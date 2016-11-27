@@ -23,6 +23,13 @@ def multiprod(A, B):
     # Approx 5x faster, only supported by numpy version >= 1.6:
     return np.einsum('ijk,ikl->ijl', A, B)
 
+def multiskew(A):
+    """
+    Inspired by MATLAB multiskew function by Paolo de Leva. 
+    
+    Returns the skew-symmetric parts of the matrices in the 3D matrix X.
+    """
+    return .5*(A - multitransp(A));
 
 def multitransp(A):
     """

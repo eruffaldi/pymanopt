@@ -6,7 +6,9 @@ from .oblique import Oblique
 from .euclidean import Euclidean, Symmetric
 from .product import Product
 from .fixed_rank import FixedRankEmbedded
+from .rotation import Rotation
+from .specialeuclidean import SpecialEuclidean
 
 __all__ = ["Grassmann", "Sphere", "Stiefel", "PSDFixedRank",
            "PSDFixedRankComplex", "Elliptope", "PositiveDefinite", "Oblique",
-           "Euclidean", "Product", "Symmetric", "FixedRankEmbedded"]
+           "Euclidean", "Product", "Symmetric", "FixedRankEmbedded","Rotation","SpecialEuclidean"]
